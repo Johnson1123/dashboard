@@ -1,0 +1,47 @@
+@import '../../../style/variable.scss';
+.balance{
+    padding: 1rem .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .Btop{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .Bcenter{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem;
+        .bar{
+            height: 100px;
+            margin: 1.5rem 0 1rem;
+            width: 70%;
+        }
+        .num{
+            font-size: $font-20;
+            line-height: 2;
+            font-weight: 700;
+        }
+        .small{
+            font-size: $font-12;
+            text-align: center;
+        }
+    }
+    .bottom{
+        margin-top: 1rem;
+        justify-content: space-between;
+        width: 90%;
+        .data{
+            div{
+                display: flex;
+                align-items: center;
+            }
+            .p-text{
+                font-size: $font-14;
+            }
+        }
+    }
+}

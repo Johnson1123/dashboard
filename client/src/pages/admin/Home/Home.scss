@@ -1,0 +1,19 @@
+@import '../../../style/variable.scss';
+.home{
+    width: 100%;
+    @include mobile{
+        display: block;
+    }
+    .Hleft{
+        flex: 2;
+        @include mobile{
+            display: none;
+        }
+    }
+    .Hright{
+        flex: 10;
+        @include mobile{
+            flex: 1;
+        }
+    }
+}

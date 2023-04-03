@@ -1,0 +1,13 @@
+@import '../../../../style/variable.scss';
+.status{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    span{
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+        padding: .4rem .5rem;
+        border-radius: 5px;
+    }
+}

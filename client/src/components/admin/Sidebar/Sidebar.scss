@@ -1,0 +1,62 @@
+@import '../../../style/variable.scss';
+.sidebar{
+    width: 100%;
+    background-color: $primaryColor;
+    border-right: 1px solid $masterColor;
+    .sidebarWrapper{
+        padding-bottom: 10px;
+        height: 100%;
+        .top{
+            height: 70px;
+            border-bottom: 1px solid $secondaryColor;
+            padding: 1rem;
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 10px;
+            }
+            .p-text{
+                color: #fff;
+            }
+        }
+        .center{
+            padding: 1rem;
+            .category-text{
+                line-height: 2;
+                margin-top: 1rem 0 0;
+            }
+            ul{
+                li{
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    margin: .3rem 0;
+                    padding: .5rem 0rem;
+                    transition: all 1s;
+                    cursor:  pointer;
+
+                    &:hover, &:active{
+                        margin-left: 1rem;
+                        background-color: #fff;
+                        border-radius: 5px;
+                        padding: .5rem .5rem;
+                    }
+                    svg{
+                        font-size: $font-18;
+                        margin-right: 5px;
+                        color: $otherColor
+                    }
+                    span{
+                        font-size: $font-14;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+        .bottom{
+            padding: 1rem;
+        }
+    }
+}

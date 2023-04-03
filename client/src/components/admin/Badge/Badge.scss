@@ -1,0 +1,47 @@
+@import '../../../style/variable.scss';
+.badgeBox{
+    flex: 1;
+    padding: .5rem 1rem;
+    justify-content: space-between;
+    margin-right: 1rem ;
+    margin-top: .5rem;
+    border-radius: 5px;
+    @include mobile{
+        width: 100%;
+    }
+    &:last-of-type{
+        margin-right: 0;
+    }
+    .Bleft{
+        .label{
+            line-height: 2;
+        }
+        .num{
+            font-size: $font-20;
+            font-weight: 500;
+            line-height: 2;
+        }
+        .link{
+            margin-top: 1rem;
+            font-size: $font-12;
+            color: $otherColor;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+    .Bright{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .icon{
+            padding: .2rem ;
+            background-color: rgba(255, 0, 0, 0.39);
+            display: flex;
+            align-items: center;
+            border-radius: 10%;
+            svg{
+                font-size: $font-16;
+            }
+        }
+    }
+}
